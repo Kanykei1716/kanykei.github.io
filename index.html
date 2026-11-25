@@ -35,9 +35,16 @@
         .gradient-text {
             color: #FFB6C1;
         }
-        .bg-grid-pattern {
-            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
-            background-size: 20px 20px;
+        .skyline-wallpaper {
+            background:
+                linear-gradient(rgba(15, 23, 42, 0.48), rgba(15, 23, 42, 0.48)),
+                url("https://images.unsplash.com/photo-1742234574058-56ed4c02fc35?auto=format&fit=crop&w=1920&q=85") center 72% / cover no-repeat;
+        }
+        .skyline-wallpaper .intro-title {
+            color: white;
+        }
+        .skyline-wallpaper .intro-copy {
+            color: #e2e8f0;
         }
     </style>
 </head>
@@ -59,7 +66,7 @@
         </div>
     </nav>
 
-    <header class="relative pt-20 pb-32 overflow-hidden bg-grid-pattern">
+    <header class="skyline-wallpaper relative pt-20 pb-32 overflow-hidden">
         <!-- Decorative blob -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-100 opacity-50 blur-3xl pointer-events-none"></div>
         
@@ -84,10 +91,10 @@
                         <!-- STUDENT INSTRUCTION: Update your major or current status -->
                         Computer Science Major | Class of 2028
                     </span>
-                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-secondary">
+                    <h1 class="intro-title text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
                         Hi, I'm <span class="gradient-text">Kanykei Ajybekova</span>.
                     </h1>
-                    <p class="text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
+                    <p class="intro-copy text-xl mb-8 max-w-2xl leading-relaxed">
                         <!-- STUDENT INSTRUCTION: Write a brief elevator pitch about yourself -->
                         A passionate software engineering student specializing in web development and cybersecurity. Currently building my foundation in computational thinking and elegant technical writing.
                     </p>
